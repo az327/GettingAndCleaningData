@@ -14,26 +14,35 @@
 		WALKING
 		WALKING_DOWNSTAIRS
 		WALKING UPSTAIRS
+		
+The following variables refer to the mean or standard deviation in the X, Y, or Z vector as indicated. 
 	
 "tBodyAcc.mean...X"
-	mean of the body acceleration for all trials performed in the X vector
-	
 "tBodyAcc.mean...Y"
-
-
 "tBodyAcc.mean...Z"
+
+	Mean of body acceleration 
+	
 "tGravityAcc.mean...X"
 "tGravityAcc.mean...Y"
 "tGravityAcc.mean...Z"
+
+	Mean of gravity acceleration
+		
 "tBodyAccJerk.mean...X"
 "tBodyAccJerk.mean...Y"
 "tBodyAccJerk.mean...Z"
+		
+	Mean of jerk signals derived from body linear acceleration and angular velocity
+	
 "tBodyGyro.mean...X"
 "tBodyGyro.mean...Y"
 "tBodyGyro.mean...Z"
+
 "tBodyGyroJerk.mean...X"
 "tBodyGyroJerk.mean...Y"
 "tBodyGyroJerk.mean...Z"
+
 "tBodyAccMag.mean.."
 "tGravityAccMag.mean.."
 "tBodyAccJerkMag.mean.."
