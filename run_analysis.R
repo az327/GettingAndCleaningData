@@ -30,15 +30,5 @@ final_data<-cbind(final_data1,final_data2) #final data set
 
 #create table for means
 mean_table<-aggregate(final_data[,4:82],list(final_data$subject_id, final_data$activity_label),mean)
-summary_mean<-cbind(summary.by=rep("mean",each=nrow(avgs)),mean_table)
 
-#create table for standard deviations
-sd_table<-aggregate(final_data[,4:82],list(final_data$subject_id, final_data$activity_label),sd)
-summary_sd<-cbind(summary.by=rep("Standard Dev."),each=nrow(sd_table),sd_table)
-
-#merge mean and standard deviation into long table
-summary_table<-merge(summary_mean,summary_sd,all=TRUE)
-colnames(summary_table)[2]<-"subject_id"
-colnames(summary_table)[3]<-"activity_label"
-
-write.table(summary_table,"summary_table.txt",row.names=FALSE)
+write.table(mean_table,"mean_table.txt",row.names=FALSE)
